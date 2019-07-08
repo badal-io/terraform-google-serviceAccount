@@ -7,9 +7,6 @@ Supports following:
 - Setting IAM Permissions as a Resource usecase (for identity set IAM at Project Level)
 - Ability to generate key (**Security Risk**: Understand risks and risk mitigation strategies before utilizing this feature)
 
-## Prerequisite
-This module uses docker to flatten IAM permissions passed down to module. Ensure that you have docker installed as it uses [terraform-flatten](https://hub.docker.com/r/muvaki/terraform-flatten) image to flatten the IAM Map. Information about the image can be found [here](https://github.com/muvaki/terraform-flatten)
-
 ## Usage
 Example folder covers how to Provision service account and set permissions and also how to generate keys. Most basic config:
 
@@ -81,10 +78,9 @@ Pass a map key value if you need to generate a key.
 ## Docs:
 
 module reference docs: 
-- terraform.io (v0.11.11)
+- terraform.io (v0.12.3)
 - GCP [Service Accounts](https://cloud.google.com/iam/docs/understanding-service-accounts)
 - GCP [IAM](https://cloud.google.com/iam/)
-- Muvaki [Terraform Flatten](https://github.com/muvaki/terraform-flatten)
 
 ### LICENSE
 
